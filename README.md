@@ -1,3 +1,5 @@
+![Alt text](/Assets/Sprites/CarCrashTitle.png?raw=true "Car Crash - The Game")
+
 # CarCrashGame
 
 Car Crash The Game is a programming project in the context of 6-Geavanceerde programmeertechnieken. This
@@ -5,8 +7,7 @@ project is a basic game developed in C++ for understanding the priniciples of ob
 The develop program is divided into two seperate namespaces: the gamelogic and the visual engine. The
 visual engine is created with the supporting libraries of SDL.
 
-This repository contains only the source code for educational purposes without the audio and visual assets!
-Therefore it cannot be executed without the needed content!
+This repository is for educational purposes only!
 
 # Third-party libraries
 
