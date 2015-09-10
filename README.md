@@ -1,4 +1,4 @@
-![Alt text](/Assets/Sprites/CarCrashTitle.png?raw=true "Car Crash - The Game")
+![Game Icon](/Assets/Sprites/CarCrashTitle.png?raw=true "Car Crash - The Game")
 
 # CarCrashGame
 
