@@ -27,6 +27,17 @@ SDLButton::SDLButton(SDL_Renderer* renderer, SDLTexture** texturePack, SDLSound*
 	setTexturePack(texturePack);
 }
 
+//Copy constructor
+SDLButton::SDLButton(const SDLButton& button) : CCG::Button()
+{
+	this->visibility = button.visibility;
+	this->texturePack = new SDLTexture*[CCG::GAMEBUTTON_MAX]();
+	this->renderer = button.renderer;
+	this->clickSound = button.clickSound;
+
+	setTexturePack(button.texturePack);
+}
+
 SDLButton::~SDLButton()
 {
 	delete(texturePack);

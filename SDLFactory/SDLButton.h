@@ -24,6 +24,7 @@ namespace CCG_SDL
 	{
 		public:
 			SDLButton(SDL_Renderer* renderer, SDLTexture** texturePack, SDLSound* clickSound);
+			SDLButton(const SDLButton& button);
 			~SDLButton(void);
 
 			void setTexturePack(SDLTexture** texturePack);
