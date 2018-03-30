@@ -84,8 +84,6 @@ int XMLFileReader::loadXML()
 	{
 		//EOF, file is corrupted?
 		delete(buffer);
-		if(valuePointer)
-			delete(valuePointer);
 
 		return -2;
 	}
@@ -139,8 +137,6 @@ int XMLFileReader::loadElement(XMLNode* node)
 				{
 					//EOF, file is corrupted?
 					delete(buffer);
-					if(valuePointer)
-						delete(valuePointer);
 
 					return -3;
 				}
@@ -155,8 +151,6 @@ int XMLFileReader::loadElement(XMLNode* node)
 				{
 					//Error occurred, stop load procedure
 					delete(buffer);
-					if(valuePointer)
-						delete(valuePointer);
 
 					return result;
 				}
@@ -173,9 +167,6 @@ int XMLFileReader::loadElement(XMLNode* node)
 	}
 
 	delete(buffer);
-
-	if(valuePointer)
-		delete(valuePointer);
 
 	return 0;
 }
