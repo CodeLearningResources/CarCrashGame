@@ -10,7 +10,7 @@
 
 #include <string>
 
-#include "Spawnpoint.h"
+#include "SpawnPoint.h"
 #include "GameAssets.h"
 #include "../GameElements/Car.h"
 #include "../GameElements/PowerUp.h"
