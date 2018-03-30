@@ -55,7 +55,7 @@ void GameControlsMenu::initialize()
 	{
 		controlsButtons[i] = factory->getButton(BUTTON_01);
 		controlsButtons[i]->setSize(185, 60);
-		controlsButtons[i]->setPos(605 - controlsButtons[i]->getSizeX()/2, (70 * i) + 225 - controlsButtons[i]->getSizeY()/2);
+		controlsButtons[i]->setPos(610 - controlsButtons[i]->getSizeX()/2, (70 * i) + 225 - controlsButtons[i]->getSizeY()/2);
 		controlsButtons[i]->visible(true);
 	}
 
@@ -65,7 +65,7 @@ void GameControlsMenu::initialize()
 	for(int i = 0; i < PLAYER_CONTROL_MAX; i++)
 	{
 		controlsValueTexts[i] = factory->getText("VALUE", FONT_TITLE_NORMAL);
-		controlsValueTexts[i]->setPos(605 - controlsValueTexts[i]->getSizeX()/2, (70 * i) + 225 - controlsValueTexts[i]->getSizeY()/2);
+		controlsValueTexts[i]->setPos(610 - controlsValueTexts[i]->getSizeX()/2, (70 * i) + 225 - controlsValueTexts[i]->getSizeY()/2);
 		controlsValueTexts[i]->setColor(255, 255, 255, 0);
 		controlsValueTexts[i]->visible(true);
 	}
@@ -78,11 +78,11 @@ void GameControlsMenu::initialize()
 	controlsTexts[PLAYER_CONTROL_DOWN] = factory->getText("Down", FONT_TITLE_NORMAL);
 	controlsTexts[PLAYER_CONTROL_LEFT] = factory->getText("Left", FONT_TITLE_NORMAL);
 	//controlsTexts[PLAYER_CONTROL_NITRO] = factory->getText("Nitro", FONT_TITLE_NORMAL);
-	controlsTexts[PLAYER_CONTROL_ROCKET] = factory->getText("Fire rocket", FONT_TITLE_NORMAL);
+	controlsTexts[PLAYER_CONTROL_ROCKET] = factory->getText("Rockets / Select", FONT_TITLE_NORMAL);
 
 	for(int i = 0; i < PLAYER_CONTROL_MAX; i++)
 	{
-		controlsTexts[i]->setPos(355, (70 * i) + 225 - controlsTexts[i]->getSizeY()/2);
+		controlsTexts[i]->setPos(310, (70 * i) + 225 - controlsTexts[i]->getSizeY()/2);
 		controlsTexts[i]->setColor(255, 255, 255, 0);
 		controlsTexts[i]->visible(true);
 	}
@@ -95,11 +95,11 @@ void GameControlsMenu::initialize()
 	//Initialize buttons
 	restoreButton = factory->getButton(BUTTON_01);
 	restoreButton->setSize(185, 60);
-	restoreButton->setPos(605 - restoreButton->getSizeX()/2, (70 * PLAYER_CONTROL_MAX) + 225 - restoreButton->getSizeY()/2);
+	restoreButton->setPos(610 - restoreButton->getSizeX()/2, (70 * PLAYER_CONTROL_MAX) + 225 - restoreButton->getSizeY()/2);
 	restoreButton->visible(true);
 
 	restoreText = factory->getText("Restore", FONT_TITLE_NORMAL);
-	restoreText->setPos(605 - restoreText->getSizeX()/2, (70 * PLAYER_CONTROL_MAX) + 225 - restoreText->getSizeY()/2);
+	restoreText->setPos(610 - restoreText->getSizeX()/2, (70 * PLAYER_CONTROL_MAX) + 225 - restoreText->getSizeY()/2);
 	restoreText->setColor(255, 255, 255, 0);
 	restoreText->visible(true);
 
@@ -262,7 +262,7 @@ void GameControlsMenu::updateValues()
 	for(int i = 0; i < PLAYER_CONTROL_MAX; i++)
 	{
 		controlsValueTexts[i]->setText(controlMapping[i]->getString());
-		controlsValueTexts[i]->setPos(605 - controlsValueTexts[i]->getSizeX()/2, (70 * i) + 225 - controlsValueTexts[i]->getSizeY()/2);
+		controlsValueTexts[i]->setPos(610 - controlsValueTexts[i]->getSizeX()/2, (70 * i) + 225 - controlsValueTexts[i]->getSizeY()/2);
 	}
 }
 
